@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+    <title>Login</title>
+
+    <style>
+      /* CSS Styles */
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          font-size: 18px;
+      }
+
+      .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 9999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar a {
+            margin-right: 20px;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: #e42278;
+        }
+
+      .container {
+          max-width: 500px;
+          margin: 0 auto;
+      }
+
+      form {
+          background-color: #fff;
+          padding: 40px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+          margin-bottom: 20px;
+          text-align: center;
+          color: #e42278; /* Main color */
+      }
+
+      label {
+          display: block;
+          margin-bottom: 8px;
+          color: #555; /* Text color */
+      }
+
+      input[type="email"],
+      input[type="password"] {
+          width: 100%;
+          padding: 12px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc; /* Border color */
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+
+      button {
+          width: 100%;
+          padding: 12px;
+          background-color: #e42278; /* Main color */
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+          background-color: #e90076; /* Darker shade of the main color */
+      }
+
+      .toggle-form {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 16px;
+          color: #777; /* Text color */
+      }
+
+      .toggle-form a {
+          color: #e42278; /* Main color */
+          text-decoration: none;
+      }
+
+      .toggle-form a:hover {
+          text-decoration: underline;
+      }
+
+      /* Home Button Styles */
+      .home-button {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #f4f4f4;
+          color: #e42278; /* Main color */
+          border: none;
+          font-size: 18px;
+          border-radius: 50%;
+          cursor: pointer;
+          padding: 10px 15px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .home-button:hover {
+          background-color: #e42278; /* Main color */
+          color: #fff;
+      }
+
+      
+  </style>
+
+
+    
+  </head>
+
+  <body>
+
+    <section class="header">
+
+      <a href="/" class="logo">
+          <img src="imagess/dapink.png" alt="DestinationAnywhere">
+      </a>
+      <nav class="navbar">
+          <a href="/home">home</a>
+          <a href="/about">about</a>
+          <a href="/package">package</a>
+          <a href="/book">book</a>
+          
+         <!-- <a href="/login">login</a> -->
+          <a href="/contact">contact</a>
+          <a href="/">login</a>
+      </nav>   
+      
+      <div id="menu-btn" class="fas fa-bars"></div>
+      </section>
+
+    <div class="form-container">
+      <h2>Login</h2>
+      <form action="/login" method="post">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="password" required >
+        </div>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <p>Login For Personalized Recommendations</p>
+      <p>Don't have an Account? <a href="/signup">Signup</a></p>
+    </div>
+  </body>
+</html>

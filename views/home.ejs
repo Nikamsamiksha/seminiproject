@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    
+<!--header section starts -->
+<section class="header">
+
+<a href="/home" class="logo">
+    <img src="imagess/dapink.png" alt="DestinationAnywhere">
+</a>
+<nav class="navbar">
+    <a href="/home">home</a>
+    <a href="/about">about</a>
+    <a href="/package">package</a>
+    <a href="/book">book</a>
+    
+   <!-- <a href="/login">login</a> -->
+    <a href="/contact">contact</a>
+    <a href="/">login</a>
+</nav>   
+
+<div id="menu-btn" class="fas fa-bars"></div>
+</section>
+<!--header section ends -->
+
+
+<section class="home">
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" style="background-image: url(imagess/desert.jpg); opacity:0.8;">
+                <div class="content">
+                    <span>explore, discover, travel</span>
+                    <h3>travel anywhere around India</h3>
+                    <a href="/package" class="btn">discover more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide" style="background-image: url(imagess/sunset.jpeg); opacity:0.8;">
+                <div class="content">
+                    <span>explore, discover, travel</span>
+                    <h3>discover the new place</h3>
+                    <a href="/package" class="btn">discover more</a>
+                </div>
+            </div>
+            <div class="swiper-slide slide" style="background-image: url(imagess/stones.jpg); opacity:0.8;">
+                <div class="content">
+                    <span>explore, discover, travel</span>
+                    <h3>make your tour worthwhile</h3>
+                    <a href="/package" class="btn">discover more</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<!-- Include Swiper library -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Initialize Swiper
+    var swiper = new Swiper(".home-slider", {
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+<!-- services -->
+<section class="services">
+    <h1 class="heading-title"> our services</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="imagess/adventurehome.jpeg" alt="">
+            <h3>adventure</h3>
+        </div>
+        <div class="box">
+            <img src="imagess/tourguidehome.jpeg" alt="">
+            <h3>tour guide</h3>
+        </div>
+        <div class="box">
+            <img src="imagess/trekking.jpeg" alt="">
+            <h3>trekking</h3>
+        </div>
+        <div class="box">
+            <img src="imagess/campfirehome.jpeg" alt="">
+            <h3>camp fire</h3>
+        </div>
+        <div class="box">
+            <img src="imagess/offroad.jpeg" alt="">
+            <h3>off road</h3>
+        </div>
+        <div class="box">
+            <img src="imagess/campinghome.jpeg" alt="">
+            <h3>camping</h3>
+        </div>
+    </div>
+</section>
+<!-- /services -->
+
+<!--home about section starts-->
+<section class="home-about">
+    <div class="image">
+        <img src="imagess/abus.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>about us</h3>
+        <p>Your trusted partner in creating unforgettable travel experiences. We are a team of passionate travel enthusiasts dedicated to making your journeys extraordinary. Whether you're a globetrotter, a weekend explorer, or a business traveler, we're here to make your travel dreams a reality.We're delighted to be part of the Vivekanand Institute of Technology.</p>
+        <a href="/about" class="btn">read more</a>
+    </div>
+</section>
+<!--home about section ends-->
+
+<!--home package section starts-->
+<section class="home-packages">
+    <h1 class="heading-title">our packages</h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="imagess/agra.travel.DestinationAnywhere.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Agra</h3>
+                <p>Agra, where history breathes through the majestic walls of the Taj Mahal.</p>
+                <a href="/book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="imagess/andamanandnicobarislands.travel.DestinationAnywhere.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Andaman and Nicobar</h3>
+                <p>Tropical paradise with pristine beaches and diverse marine life.</p>
+                <a href="/book" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="imagess/amritsar.travel.DestinationAnywhere.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Amritsar</h3>
+                <p>Spiritual and cultural hub known for the Golden Temple.</p>
+                <a href="/book" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+    <div class="load-more"> <a href="/package" class="btn">load more</a> </div>
+</section>
+<!--home package section ends-->
+
+<!--home offer section starts-->
+<section class="home-offer">
+    <div class="content">
+        <h3>upto 50% off</h3>
+        <p>Get Upto 50% off on our packages</p>
+        <a href="/book" class="btn">book now</a>
+    </div>
+</section>
+<!--home offer section ends-->
+
+<!-- footer section starts-->
+<section class ="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/home"><i class="fas fa-angle-right"></i> home</a>
+            <a href="/about"><i class="fas fa-angle-right"></i> about</a>
+            <a href="/package"><i class="fas fa-angle-right"></i> package</a>
+            <a href="/book"><i class="fas fa-angle-right"></i> book</a>
+        </div>
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i> ask question</a>
+            <a href="#"><i class="fas fa-angle-right"></i> about us</a>
+            <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+            <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fas fa-facebook-f"></i> facebook</a>
+            <a href="#"><i class="fas fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fas fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fas fa-linkedin"></i> linkedin </a>
+        </div>
+    </div>
+    <div class="credit"> created by <span>Group40</span>| all right reserved! </div>
+</section>  
+<!-- footer section ends -->
+<script>
+  menu.onclick = () =>{
+  menu.classList.toggle('fa-times');
+  navbar.classList.toggle('active');
+};
+
+window.onscroll = () =>{
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="./views/src/index.js"></script>
+
+
+</body>
+</html>

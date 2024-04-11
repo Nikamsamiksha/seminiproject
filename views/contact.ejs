@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DestinationAnywhere</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        /* Reset some default styles for better alignment */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #e42278; /* Main color */
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f7f7f7;
+            margin-top: 100px; /* Add margin-top to create space */
+        }
+
+        #contact h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #e42278; /* Main color */
+        }
+
+        #contact p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Client Section */
+        #client-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .client-box {
+            display: inline-block;
+            width: 23%;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-box img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        .client-box h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #e42278; /* Main color */
+        }
+
+        /* Style mobile and email text with the same color as the text */
+        .client-box p {
+            font-size: 18px;
+            color: #333; /* Set the color to the same as the text */
+        }
+
+        /* Home Button */
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #e42278; /* Main color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-button:hover {
+            background-color: #d11c6c; /* Darker shade of main color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+
+        <a href="/contact" class="logo">
+            <img src="imagess/dapink.png" alt="DestinationAnywhere">
+        </a>
+        <nav class="navbar">
+            <a href="/home">home</a>
+            <a href="/about">about</a>
+            <a href="/package">package</a>
+            <a href="/book">book</a>
+            
+           <!-- <a href="/login">login</a> -->
+            <a href="/contact">contact</a>
+            <a href="/">login</a>
+        </nav>   
+        
+        <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to get in touch with us.</p>
+    </section>
+
+    <!-- Four Boxes with Images, Names, and Emails -->
+<section id="client-section">
+    <div class="client-box">
+        <!-- Add a link for WhatsApp with the phone number -->
+        <a href="whatsapp://send?phone=+918767227609">
+            <img height="350px" src="imagess/diya.jpg" alt="Client 1">
+        </a>
+        <h3>Diya Zambani</h3>
+        <p>Email: <a href="mailto:2022.diya.zambani@ves.ac.in" style="color: #e42278;"><span style="text-transform: lowercase;">2022.diya.zambani@ves.ac.in</span></a></p>
+        <!-- Add a link for WhatsApp with the phone number -->
+        <p class="mobile"><a href="whatsapp://send?phone=+918767227609" style="color: #e42278;">Mobile: +91 8767227609</a></p>
+    </div>
+
+    <div class="client-box">
+        <!-- Add a link for WhatsApp with the phone number -->
+        <a href="whatsapp://send?phone=+919021943867">
+            <img height="350px" src="imagess/laveenaphhhhhhhhhhhhhhhhh.jpeg" alt="Client 2">
+        </a>
+        <h3>Laveena Mirani</h3>
+        <p>Email: <a href="mailto:2022.laveena.mirani@ves.ac.in" style="color: #e42278;"><span style="text-transform: lowercase;">2022.laveena.mirani@ves.ac.in</span></a></p>
+        <!-- Add a link for WhatsApp with the phone number -->
+        <p class="mobile"><a href="whatsapp://send?phone=+919021943867" style="color: #e42278;">Mobile: +91 9021943867</a></p>
+    </div>
+
+    <div class="client-box">
+        <!-- Add a link for WhatsApp with the phone number -->
+        <a href="whatsapp://send?phone=+919096829795">
+            <img height="350px" src="imagess/samiksha.jpg" alt="Client 3">
+        </a>
+        <h3>Samiksha Nikam</h3>
+        <p>Email: <a href="mailto:2022.samiksha.nikam@ves.ac.in" style="color: #e42278;"><span style="text-transform: lowercase;">2022.samiksha.nikam@ves.ac.in</span></a></p>
+        <!-- Add a link for WhatsApp with the phone number -->
+        <p class="mobile"><a href="whatsapp://send?phone=+919096829795" style="color: #e42278;">Mobile: +91 9096829795</a></p>
+    </div>
+
+    <div class="client-box">
+        <!-- Add a link for WhatsApp with the phone number -->
+        <a href="whatsapp://send?phone=+919372770440">
+            <img height="350px" src="imagess/viral.jpg" alt="Client 4">
+        </a>
+        <h3>Viral Somani</h3>
+        <p>Email: <a href="mailto:2022.viral.somani@ves.ac.in" style="color: #e42278;"><span style="text-transform: lowercase;">2022.viral.somani@ves.ac.in</span></a></p>
+        <!-- Add a link for WhatsApp with the phone number -->
+        <p class="mobile"><a href="whatsapp://send?phone=+919372770440" style="color: #e42278;">Mobile: +91 9372770440</a></p>
+    </div>
+</section>
+
+<!-- Home Button -->
+<!--<button class="home-button" onclick="goToHome()">❰ HOME</button>-->
+
+<!-- Script to redirect to /home -->
+<script>
+    function goToHome() {
+        window.location.href = "/home";
+    }
+</script>
+
+</body>
+
+</html>

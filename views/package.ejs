@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>package</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/searchengine.css">
+    <style>
+        .heading {
+            background: url(imagess/editpic.jpeg);
+            opacity: 0.8;
+        }
+        .search-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #searchInput {
+            margin-right: 10px;
+        }
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sidebar {
+            flex: 0 0 20%;
+            margin-right: 20px;
+        }
+        .dataa {
+            flex: 1;
+            margin-top: -25px;
+        }
+
+        .bodyy {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+    flex: 0 0 calc(25% - 20px); /* Adjusted the flex value to occupy 25% of the container */
+    margin-bottom: 20px;
+}
+
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                flex: 0 0 100%;
+                margin-right: 0;
+            }
+            .box {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+
+        .images {
+    width: 100%;
+    height: auto;
+}
+
+/*.description {
+    font-size: 12px;
+    margin-top: 5px;
+}*/
+
+    </style>
+</head>
+<body>
+    
+<section class="header">
+    <a href="/package" class="logo">
+        <img src="imagess/dapink.png" alt="DestinationAnywhere">
+    </a>
+    <nav class="navbar">
+        <a href="/home">home</a>
+        <a href="/about">about</a>
+        <a href="/package">package</a>
+        <a href="/book">book</a>
+        <a href="/contact">contact</a>
+        <a href="/">login</a>
+    </nav>   
+    <div id="menu-btn" class="fas fa-bars"></div>
+</section>
+
+<div class="heading">
+    <div class="search-container">
+        <!--<input type="text" id="searchInput" placeholder="Search destinations...">
+        <button onclick="filterDestinations()">Search</button>-->
+    </div>
+    <h1>packages</h1>
+</div>
+
+<section class="packages">
+    
+    <div class="sidebar">
+        <div class="searchbar">
+            <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+            <i class="fa-solid fa-magnifying-glass glass"></i>
+        </div>
+        <div class="sidefoot">
+         <hr style="margin: 15px 0; border: 1px solid #eee;">
+         <div class="social-icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-github"></i>
+         </div>
+        </div>
+    </div>
+    <div class="dataa">
+        <div class="headerr">
+            <p>TOP DESTINATIONS</p>
+        </div>
+        <div class="bodyy" id="roott"></div>
+    </div>
+
+    <div class='img-box'>
+    </div>
+    <div class='bottom'>
+    </div>
+    
+</section>
+
+
+
+<!-- footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="/home"><i class="fas fa-angle-right"></i> home</a>
+            <a href="/about"><i class="fas fa-angle-right"></i> about</a>
+            <a href="/package"><i class="fas fa-angle-right"></i> package</a>
+            <a href="/book"><i class="fas fa-angle-right"></i> book</a>
+        </div>
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i> ask question</a>
+            <a href="#"><i class="fas fa-angle-right"></i> about us</a>
+            <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+            <a href="#"><i class="fas fa-angle-right"></i> terms of use</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fas fa-facebook-f"></i> facebook</a>
+            <a href="#"><i class="fas fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fas fa-instagram"></i> instagram</a>
+            <a href="#"><i class="fas fa-linkedin"></i> linkedin </a>
+        </div>
+    </div>
+</section>  
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+   const destination= [
+    {
+        id: 0,
+        image:'imagess/agra.travel.DestinationAnywhere.jpg',
+        title:'Agra',
+        description:'Home to the iconic Taj Mahal, symbolizing eternal love.'
+    },
+    {
+        id: 1,
+        image:'imagess/amritsar.travel.DestinationAnywhere.jpg',
+        title:'Amritsar',
+        description:'Spiritual and cultural hub known for the Golden Temple.'
+        
+    },
+    {
+        id: 2,
+        image:'imagess/andamanandnicobarislands.travel.DestinationAnywhere.jpg',
+        title:'A&N Islands',
+        description:'Tropical paradise with pristine beaches and diverse marine life.'
+    },
+    {
+        id: 3,
+        image:'imagess/bangalore.travel.DestinationAnywhere.jpg',
+        title:'Bangalore',
+        description:"India's Silicon Valley, bustling with tech innovation and green spaces."
+    },
+    {
+        id: 4,
+        image:'imagess/chennai.travel.DestinationAnywhere.jpg',
+        title:'Chennai',
+        description:'Coastal city renowned for its temples, music, and vibrant culture'
+    },
+    {
+        id: 5,
+        image:'imagess/coorg.travel.DestinationAnywhere.jpg',
+        title:'Coorg',
+        description:' Serene hill station famous for coffee plantations and lush greenery.'
+    },
+    {
+        id: 6,
+        image:'imagess/delhi.travel.DestinationAnywhere.jpg',
+        title:'Delhi',
+        description:'Dynamic capital city blending history, culture, and modernity.'
+    },
+    {
+        id: 7,
+        image:'imagess/goa.travel.DestinationAnywhere.jpg',
+        title:'Goa',
+        description:'Beach paradise known for its vibrant nightlife and Portuguese heritage.'
+    },
+    {
+        id: 8,
+        image:'imagess/gujarat.travel.DestinationAnywhere.jpg',
+        title:'Gujarat',
+        description:'Vibrant state with a rich history, vibrant festivals, and stunning architecture.'
+    },
+    {
+        id: 9,
+        image:'imagess/himalaya.travel.DestinationAnywhere.jpg',
+        title:'The Himalayas',
+        description:'Majestic mountain range offering breathtaking landscapes.'
+    },
+    {
+        id: 10,
+        image:'imagess/hyderabad.travel.DestinatinAnywhere.jpg',
+        title:'Hyderabad',
+        description:'Historic city famed for its rich cuisine and iconic Charminar.'
+    },
+    {
+        id: 11,
+        image:'imagess/jaipur.travel.DestinationAnywhere.jpg',
+        title:'Jaipur',
+        description:'Pink City famous for its royal palaces, forts, and colorful markets.'
+    },
+    {
+        id: 12,
+        image:'imagess/kerela.travel.DestinationAnywhere.jpg',
+        title:'Kerela',
+        description:"God's Own Country, known for its backwaters, wildlife, and lush greenery."
+    },
+    {
+        id: 13,
+        image:'imagess/kolkata.travel.DestinationAnywhere.jpg',
+        title:'Kolkata',
+        description:'City of Joy, blending colonial architecture with cultural diversity.'
+    },
+    {
+        id: 14,
+        image:'imagess/ladakh.travel.DestinationAnywhere.jpg',
+        title:'Ladakh',
+        description:'Remote region known for its stark landscapes, Buddhist monasteries.'
+    },
+    {
+        id: 15,
+        image:'imagess/manali.travel.DestinAnywhere.jpg',
+        title:'Manali',
+        description:'Scenic hill station offering adventure activities, and serene valleys.'
+    },
+    {
+        id: 16,
+        image:'imagess/mumbai.travel.DestinationAnywhere.jpg',
+        title:'Mumbai',
+        description:'Cosmopolitan metropolis famed for Bollywood  and bustling streets.'
+    },
+    {
+        id: 17,
+        image:'imagess/rishikesh.travel.DestinationAnywhere.jpg',
+        title:'Rishikesh',
+        description:'Yoga capital of the world, nestled in the Himalayas on the banks of the Ganges.'
+    },
+    {
+        id: 18,
+        image:'imagess/udaipur.travel.DestinationAnywhere.jpg',
+        title:'Udaipur',
+        description:'City of Lakes, renowned for its stunning palaces and serene lakes .'
+    },
+    {
+        id: 19,
+        image:'imagess/rajasthan.webp',
+        title:'Rajasthan',
+        description:'Land of Maharajas, known for its majestic forts,  and desert landscapes.'
+    },
+    {
+        id: 20,
+        image:'imagess/varanasi.jpg',
+        title:'Varanasi',
+        description:'Spiritual capital of India, ancient temples and vibrant ghats along the Ganges.'
+    },
+    {
+        id: 21,
+        image:'imagess/ahemdabad.jpg',
+        title:'Ahemdabad',
+        description:'Vibrant city known for its rich history and mouthwatering street food.'
+    },
+    {
+        id: 22,
+        image:'imagess/darjeeling.jpg',
+        title:'Darjeeling',
+        description:'Himalayan hill station for its tea gardens and stunning views of Kanchenjunga.'
+    },
+    {
+        id: 23,
+        image:'imagess/shimla.jpg',
+        title:'Shimla',
+        description:'Queen of Hill Stations, offering snow-capped peaks, and scenic beauty.'
+    },
+    {
+        id: 24,
+        image:'imagess/mysore.avif',
+        title:'Mysore',
+        description:'Heritage city renowned for its palaces, silk sarees, and vibrant Dasara festival.'
+    },
+    {
+        id: 25,
+        image:'imagess/gangtok.jpg',
+        title:'Gangtok',
+        description:'Picturesque hill station known for its Buddhist monasteries and trekking trails.'
+    },
+    {
+        id: 26,
+        image:'imagess/srinagar.jpg',
+        title:'Srinagar',
+        description:'Jewel of Kashmir, Houseboats,Mughal gardens and scenic beauty.'
+    },
+    {
+        id: 27,
+        image:'imagess/lakshadweep.jpg',
+        title:'Lakshadweep',
+        description:'Exotic archipelago known for its coral reefs, clear waters, and water sports.'
+    },
+    {
+        id: 28,
+        image:'imagess/kodaikanal.webp',
+        title:'Kodaikanal',
+        description:'Hill station in Tamil Nadu, famous for its cool climate and eucalyptus forests.'
+    },
+    {
+        id: 29,
+        image:'imagess/nainital.jpg',
+        title:'Nainital',
+        description:'Lake District of India, offering scenic lakes and adventure activities.'
+    },
+    {
+        id: 30,
+        image:'imagess/mussoorie.jpg',
+        title:'Musoorie',
+        description:'Queen of the Hills, known for its breathtaking views and colonial charm.'
+    }
+
+]
+
+const categories = [...new Set(destination.map((item) => {return item}))]
+
+document.getElementById('searchBar').addEventListener('keyup' , (e)=>{
+    const searchData = e.target.value.toLowerCase();
+    const filterData = categories.filter((item)=>{
+        return(
+            item.title.toLocaleLowerCase().includes(searchData)
+        )
+    })
+    displayItem(filterData)
+});
+
+const displayItem = (items)=> {
+    document.getElementById('roott').innerHTML=items.map((item)=>{
+        var {image, title , description} = item;
+        return(
+            `<div class='box'>
+            <div class='img-box'>
+            <img class='images' src=${image}></img>
+            </div>
+            <div class='bottom'>
+            <h2 style="font-size: 24px;">${title}</h2>
+            <h1 style="font-size: 12px;">${description}</h1>
+            <button class='book-now' onclick="redirectToBook()">Book Now</button>
+            </div>
+            </div>`
+        )
+    }).join('')
+
+}
+function redirectToBook() {
+    window.location.href = '/book';
+}
+
+
+
+displayItem(categories);
+
+
+</script>
+<script src="./views/src/index.js"></script>
+
+</body>
+</html>
